@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Tour & Travel Agency Website</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+     <!-- header section starts -->
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <a href="#" class="logo"><span>T</span>ravel</a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#book">Book</a>
+            <a href="#packages">Packages</a>
+            <a href="#services">Services</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="icons">
+           <i class="fas fa-search" id="search-btn"></i>
+           <i class="fas fa-user" id="login-btn"></i>
+        </div>
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here....">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- Login form container  -->
+
+    <div class="login-form-container">
+
+        <i class="fas fa-time" id="form-close"></i>
+
+        <form action="">
+            <h3>Login</h3>
+            <input type="email" class="box" placeholder="enter your email">
+            <input type="password" class="box" placeholder="enter your password">
+            <input type="submit" value="login" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">remember me</label>
+            <p>forget password <a href="#">click here</a></p>
+            <p>don't have and account <a href="#">register</a></p>
+        </form>
+    </div>
+
+<!-- home section start  -->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>adveture is worthwhile</h3>
+            <p>discover beautiful places with us, adventure awaits</p>
+            <a href="#" class="btn">discover more</a>
+        </div>
+        <div class="controls">
+            <span class="vid-btn active" data-src="samundra.mp4"></span>
+            <span class="vid-btn" data-src="india.mp4"></span>
+            <span class="vid-btn" data-src="waterfall.mp4"></span>
+            <span class="vid-btn" data-src="cat.mp4"></span>
+            <span class="vid-btn" data-src="water_beach.mp4"></span>
+            <span class="vid-btn" data-src="roadway.mp4"></span>
+        </div>
+        <div class="video-container">
+            <video src="samundra.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+
+    </section>
+<!-- home section ends  -->
+
+<!-- book section start  -->
+<section class="book" id="book">
+    <h1 class="heading">
+        <span>b</span>
+        <span>o</span>
+        <span>o</span>
+        <span>k</span>
+        <span class="space"></span>
+        <span>n</span>
+        <span>o</span>
+        <span>w</span>
+    </h1>
+    <div class="row">
+        <div class="image">
+            <img src="vc.png" >
+        </div>
+        <form action="">
+
+            <div class="inputbox">
+                <h3>Where to</h3>
+                <input type="text " placeholder="place name">
+            </div>
+            <div class="inputbox">
+                <h3>How many</h3>
+                <input type="number" placeholder="number of guests">
+            </div>
+            <div class="inputbox">
+                <h3>Arrivals</h3>
+                <input type="date">
+            </div>
+            <div class="inputbox">
+                <h3>Living</h3>
+                <input type="date" >
+            </div>
+            <input type="submit" class="btn" value="book now">
+
+        </form>
+    </div>
+</section>
+<!-- book section ends  -->
+  
+<!-- Packages section starts  -->
+   <section class="packages" id="packages">
+    <h1 class="heading">
+        <span>P</span>
+        <span>a</span>
+        <span>c</span>
+        <span>k</span>
+        <span>a</span>
+        <span>g</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+
+    <div class="box-container">
+        <div class="box">
+            <img src="mumbai.png" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i>Mumbai</h3>
+                <p>The Gateway of India is an iconic arch-monument in Mumbai, India, built in the early 20th century.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>                    
+                    <i class="fas fa-star"></i>                    
+                    <i class="fas fa-star"></i>                    
+                    <i class="fas fa-star"></i>                    
+                    <i class="far fa-star"></i>                 
+                </div>
+                <div class="price">$90.00 <span>$120.00</span></div>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="aagra.png" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i>Tajmahal</h3>
+                <p>I feel blessed to have seen the Taj Mahal, one of the Seven Wonders of the World. </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>                    
+                    <i class="fas fa-star"></i>                    
+                    <i class="fas fa-star"></i>                    
+                    <i class="fas fa-star"></i>                    
+                    <i class="far fa-star"></i>                 
+                </div>
+                <div class="price">$70.00 <span>$100.00</span></div>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="ram_ji.png" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i>Aayodhya</h3>
+                <p>As the Ayodhya Ram Mandir stands tall, may our hearts be filled with love, compassion, and unity. </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>                    
+                    <i class="fas fa-star"></i>                    
+                    <i class="fas fa-star"></i>                    
+                    <i class="fas fa-star"></i>                    
+                    <i class="far fa-star"></i>                 
+                </div>
+                <div class="price">$30.00 <span>$50.00</span></div>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="gujrat.png" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i>Gujrat</h3>
+                <p>It is one of the most sacred pilgrimage sites for Hindus and is the first among 
+                    the twelve jyotirlinga shrines of Shiva.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>                    
+                    <i class="fas fa-star"></i>                    
+                    <i class="fas fa-star"></i>                    
+                    <i class="fas fa-star"></i>                    
+                    <i class="far fa-star"></i>                 
+                </div>
+                <div class="price">$50.00 <span>$90.00</span></div>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="landon.png" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i>Landon</h3>
+                <p>Tower Bridge au crayon et aquarelle pour faire vivre le croquis.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>                    
+                    <i class="fas fa-star"></i>                    
+                    <i class="fas fa-star"></i>                    
+                    <i class="fas fa-star"></i>                    
+                    <i class="far fa-star"></i>                 
+                </div>
+                <div class="price">$110.00 <span>$150.00</span></div>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="peris.png" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i>Peris</h3>
+                <p>Paris is the City of Light, of love, of beauty, of romance and of hope over fear,
+                     gratitude over cynicism and light over darkness.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>                    
+                    <i class="fas fa-star"></i>                    
+                    <i class="fas fa-star"></i>                    
+                    <i class="fas fa-star"></i>                    
+                    <i class="far fa-star"></i>                 
+                </div>
+                <div class="price">$100.00 <span>$130.00</span></div>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+        </div>
+    </div>
+   </section>
+<!-- Packages section ends  -->
+
+<!-- services section starts  -->
+<section class="services" id="services">
+    <h1 class="heading">
+        <span>S</span>
+        <span>e</span>
+        <span>r</span>
+        <span>v</span>
+        <span>i</span>
+        <span>c</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+    <div class="box-container">
+        <div class="box">
+            <i class="fas fa-hotel"></i>
+            <h3>Affordable Hotels</h3>
+            <p>Hotel owners and managers will find hotel business slogans as an essential online marketing tool that can help convert well targeted visitors and leads into actual bookings.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-utensils"></i>
+            <h3>Food and Drinks</h3>
+            <p>One cannot think well, love well, sleep well, if one has not dined well.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-bullhorn"></i>
+            <h3>Sefety Guide</h3>
+            <p>Safety first and last longer</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-globe-asia"></i>
+            <h3>Affordable Places</h3>
+            <p>Every single one of us deserves access to quality, affordable health care.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-plane"></i>
+            <h3>Fastest Travel</h3>
+            <p>Stop worrying and enjoy the journey
+                </p>
+        </div>
+        <div class="box">
+            <i class="fas fa-hiking"></i>
+            <h3>adventures</h3>
+            <p>Life is an adventure! Adventure quotes inspire, 
+                spark your wanderlust, and simply make a great Instagram caption.</p>
+        </div>
+    </div>
+</section>
+
+<!-- services section ends  -->
+
+<!-- gallery section starts  -->
+<section class="gallery" id="gallery">
+    <h1 class="heading">
+        <span>G</span>
+        <span>a</span>
+        <span>l</span>
+        <span>l</span>
+        <span>e</span>
+        <span>r</span>
+        <span>y</span>
+    </h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="./galler1.png" alt="">
+            <div class="content">
+                <h3>Amezing Places</h3>
+                <p>Beach days are the best days. We're talking about those relaxing dog days of summer
+                     spent by the water when the world seems to fall away. </p>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="./galler2.png" alt="">
+            <div class="content">
+                <h3>Amezing Places</h3>
+                <p>“I want someone to look at me the way I look at a travel magazine.” </p>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="./galler3.png" alt="">
+            <div class="content">
+                <h3>Amezing Places</h3>
+                <p>We live in a wonderful world that is full of beauty, charm and adventure. </p>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="./galler4.png" alt="">
+            <div class="content">
+                <h3>Amezing Places</h3>
+                <p>Beach days are the best days. We're talking about those relaxing dog days of summer spent by the water when the world seems to fall away. </p>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="./galler5.png" alt="">
+            <div class="content">
+                <h3>Amezing Places</h3>
+                <p>You can spend your days switching back and forth from looking at your favorite travel photos to trying to go about your day to day life.</p>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="./galler6.png" alt="">
+            <div class="content">
+                <h3>Amezing Places</h3>
+                <p>Beach days are the best days. We're talking about those relaxing dog days of summer spent by the water when the world seems to fall away. </p>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="./galler7.png" alt="">
+            <div class="content">
+                <h3>Amezing Places</h3>
+                <p>a few friendly reminders that the next adventure is closer than you think can help you put your wanderlust to rest.</p>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="./galler8.png" alt="">
+            <div class="content">
+                <h3>Amezing Places</h3>
+                <p>Live your life by a compass not a clock</p>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="./galler9.png" alt="">
+            <div class="content">
+                <h3>Amezing Places</h3>
+                <p>A journey of a thousand miles begins with a single step.</p>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- gallery section ends  -->
+
+<!-- review section start  -->
+<section class="reviews" id="reviews">
+    <h1 class="heading">
+        <span>R</span>
+        <span>e</span>
+        <span>v</span>
+        <span>i</span>
+        <span>e</span>
+        <span>w</span>
+        <span>s</span>
+    </h1>
+    <div class="swiper mySwiper review-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="./review1.png" alt="">
+                    <h3>Bhumika</h3>
+                    <p>Working very smoothly..fantastic website happy to use</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="./review2.png" alt="">
+                    <h3>Sunil nishad</h3>
+                    <p>This is very useful website. Enjoying its facilities.Thank you!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="./review3.png" alt="">
+                    <h3>Manisha yadav</h3>
+                    <p>Good traveling website, increase the redemption limit for frequent travellers.
+                         it is also good, excellent. nice work.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="./review4.png" alt="">
+                    <h3>Amrish puri</h3>
+                    <p>It is good company and the environment is also good as a customer 
+                        I also prefer Easemytrip to make my every booking</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="./review5.png" alt="">
+                    <h3>Sakshi gupta</h3>
+                    <p>Great experience, Best Customer experience, 
+                        problem solved within 3 mins . Good Job????Best in everything</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="./review6.png" alt="">
+                    <h3>Nitish mani</h3>
+                    <p>It's really nice to see such a wonderful people working in customer care.
+                        I am truly satisfied and suggest the same to my friends.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="./review7.png" alt="">
+                    <h3>Sonam </h3>
+                    <p>Used their website recently for flight booking. Multiple promo 
+                        codes are available and I also got a huge discount by using one of them.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- review section end -->
+
+<!-- contact section start  -->
+<section class="contact" id="contact">
+    <h1 class="heading">
+        <span>C</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+    </h1>
+    <div class="row">
+        <div class="image">
+            <img src="globe1.png" alt="">
+        </div>
+        <form action="" >
+            <div class="inputbox">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="email">
+            </div>
+            <div class="inputbox">
+                <input type="number" placeholder="number">
+                <input type="text" placeholder="subject">
+            </div>
+            <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
+            <input type="Submit" class="btn" value="send message">
+        </form>
+    </div>
+</section>
+<!-- contact section end -->
+
+<!-- brand section  -->
+<section class="brand-container">
+
+    <div class="swiper-container brand-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="s1.png" alt=""></div>
+            <div class="swiper-slide"><img src="s2.png" alt=""></div>
+            <div class="swiper-slide"><img src="s3.png" alt=""></div>
+            <div class="swiper-slide"><img src="s4.png" alt=""></div>
+            <div class="swiper-slide"><img src="s5.png" alt=""></div>
+            <div class="swiper-slide"><img src="s6.png" alt=""></div>
+        </div>
+    </div>
+</section>
+
+<!-- footer section  -->
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>about us</h3>
+            <p>As a travel website owner, you know that the “about us” page is 
+                an essential element of your website. This page is where you get
+                 to introduce yourself, your brand, and your mission to potential customers.</p>
+        </div>
+        <div class="box">
+            <h3>branch locations</h3>
+            <a href="#">India</a>
+            <a href="#">USA</a>
+            <a href="#">Japan</a>
+            <a href="#">France</a>
+        </div>
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#">Home</a>
+            <a href="#">Book</a>
+            <a href="#">Packages</a>
+            <a href="#">Services</a>
+            <a href="#">Gallery</a>
+            <a href="#">Review</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#">facebook</a>
+            <a href="#">Instagram
+            </a>
+            <a href="#">twitter</a>
+            <a href="#">linkedin</a>
+            
+        </div>
+    </div>
+    <h1 class="credit"> created by <span>Poonam nishad & Sunil nishad </span> | all rights reserved! </h1>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- custom js file link  -->
+    <script src="script.js"></script>
+
+    
+    
+</body>
+</html>
+
